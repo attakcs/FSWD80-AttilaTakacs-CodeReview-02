@@ -1,0 +1,203 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 80%;
+  margin: 0 auto; 
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #5d1214;
+  height: 120px;
+  width: 100%;
+}
+  
+header > div {
+  margin-left: 5%;
+  margin-right: 5%;   
+}  
+
+nav {
+  background-color: black;
+  margin-top: 0;
+
+}
+
+nav > ul {
+  margin:  0;
+  padding: 10px;
+}
+ 
+nav > ul > li {  
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 10px;
+  background-color: black;
+  color: white; 
+}
+
+nav > ul > a {
+  list-style: none;  
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 10px;
+  background-color: black;
+  color: white; 
+}
+
+
+h4 {
+  height: 20px;
+  width: 100%;
+  padding: 5px;
+  background-color: #dedede;       /*this was all on the top, now I'll start the main section */
+} 
+
+
+#wrapper {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#news {
+  width: 100%;
+  height: auto; 
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.smallBoxes {    
+  width: 260px;
+  height: 200px;
+  background-color: black;
+  color: white;
+  padding:  0;
+}
+
+.smallBoxes p {
+  margin-top: 2px;
+  width: 260px;
+  height: 200px;
+}
+
+.smallBoxes img {
+  height: 75%;
+  width: 100%;
+}
+
+#topLeft {
+  width: 85%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; 
+}
+
+#popDivider {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+#topBannerRight img {
+  width: auto;
+  height: 470px;  
+}
+
+#bannerMiddle {
+  margin: 5% 10%;
+}
+
+/* bottom part */
+
+#tech {
+  width: 100%;
+  height: auto; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.bigBoxes {    
+  width: 350px;
+  height: 280px;
+  background-color: black;
+  color: white;
+  padding:  0;
+}
+
+.bigBoxes p {
+  font-size: 22px;
+  margin-top: 3px;
+  width: 100%;
+  height: auto;
+}
+
+.bigBoxes img {
+  height: 80%;
+  width: 100%;
+}
+
+#bottomLeft {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; 
+}
+
+#bottomBannerRight img {
+  height: 580px;
+  width: 100%;  
+}
+
+/* fooooooter */
+
+footer {
+  padding: 2px 10px;
+  height: 140px;
+  background-color: black;
+  color: white;
+}
+
+footer p {
+  text-align: center;
+}
+
+#articles {
+  text-align: justify;  
+  line-height: 1.9em;
+}
+
+#articles img {
+  float: left;
+  margin: 0 2% 1% 0;
+}
+
+/* aaand the best part: media queries :) */
+
+@media only screen and (min-width: 481px) and (max-width: 1000px) {
+  #bannerTop, #topBannerRight, #bottomBannerRight, #bannerMiddle, #popDivider  {
+    display: none;} 
+
+  #wrapper {display: inline-block;}
+   
+  .bigBoxes {
+    width: 260px;
+    height: 200px;}
+}
+
+@media only screen and (max-width: 480px){
+  #bannerTop, #topBannerRight, #bottomBannerRight, #popDivider, #bannerMiddle  {
+    display: none;}
+  
+
+  .bigBoxes {
+    width: 260px;
+    height: 200px;}
+
+  footer {
+   align-items: center;}
+}
+
+
+
